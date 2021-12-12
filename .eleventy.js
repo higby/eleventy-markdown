@@ -17,6 +17,7 @@ module.exports = function (eleventyConfig) {
     .use(cite)
     .use(footnote)
     .use(figures, { figcaption: true })
-    .use(mark);
+    .use(mark)
+    .disable('code');
     eleventyConfig.setLibrary('md', markdownLibrary);
 }
